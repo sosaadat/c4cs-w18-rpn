@@ -9,3 +9,7 @@ install:
 script:
   - coverage run test_rpn.py
 
+after_success:
+  - codecov
+
+
