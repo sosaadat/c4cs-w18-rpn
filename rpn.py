@@ -2,13 +2,17 @@
 
 import operator
 
+def expo(x, y):
+    return x**y 
 
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
+    '^': expo
 }
+
 
 def calculate(myarg):
     stack = list()
